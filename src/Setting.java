@@ -3,6 +3,14 @@ public class Setting
     //冰箱格子陣列
     private FridgeDrawer myFridgeDrawer[][] = new FridgeDrawer[3][3];
 
+    //這邊要怎麼處理我覺得很混亂
+    //理論上每一個格子都需要一個重量Sensor
+    //那我要在冰箱格子的class中hold一個WeightSensor嗎
+    //還是我在這個class裡面開一個WeightSensor陣列
+    //因爲我有冰箱有幾個分隔就應該有幾個重量感測器吧
+
+
+    
     //可能跟DB或者local取得格子資料
     
 

@@ -2,7 +2,7 @@ public class TempSensor
 {
     private Notifier notifier;
     private float temperature;
-    private float MaxTemperature;
+    private float maxTemperature;
 
     //設定通知器
     public void SetNotifier(Notifier notifier)
@@ -13,19 +13,19 @@ public class TempSensor
     //判斷溫度過高後通知通知
     public void CheckTemperature()
     {
-        if (temperature >= MaxTemperature) notifier.NotifyAbnormalTemperature();
+        if (temperature >= maxTemperature) notifier.NotifyAbnormalTemperature();
     }
 
-    //設定異常溫度
+    //設定最大溫度
     public void SetMaxTemperature(float maxTemperature)
     {
-        this.MaxTemperature = maxTemperature;
+        this.maxTemperature = maxTemperature;
     }
 
-    //取得異常溫度
+    //取得最大溫度
     public float GetMaxTemperature()
     {
-        return MaxTemperature;
+        return maxTemperature;
     }
 
     //讓別的class取得現在的溫度
