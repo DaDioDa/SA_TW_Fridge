@@ -10,11 +10,7 @@ public class Setting
     //設定這格什麼菜、最小重量、模式冷藏/冷凍/生鮮/急速冷凍
     public void SetDrawerDetail(int i, int j,Goods goods, DrawerMode drawerMode, float minWeight)
     {
-        myFridgeDrawer[i][j].drawerMode = drawerMode;
-        myFridgeDrawer[i][j].goods = goods;
-        myFridgeDrawer[i][j].minWeight = minWeight;
-        myFridgeDrawer[i][j].i = i;
-        myFridgeDrawer[i][j].j = j;
+        myFridgeDrawer[i][j].EditFridgeDrawerDetail(goods, drawerMode, minWeight);
     }
 
     //設定冰箱格子陣列

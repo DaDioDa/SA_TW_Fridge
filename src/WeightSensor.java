@@ -6,7 +6,7 @@ public class WeightSensor
     public void CheckWeight(Notifier notifier, FridgeDrawer fridgeDrawer)
     {
 
-        if (weight <= fridgeDrawer.minWeight) notifier.NotifyWeight(fridgeDrawer);
+        if (weight <= fridgeDrawer.GetMinWeight()) notifier.NotifyWeight(fridgeDrawer);
    
     } 
 

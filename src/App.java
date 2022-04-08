@@ -21,5 +21,12 @@ public class App {
         //應該要週期性的呼叫檢查溫度
         tempSensor.CheckTemperature();
         //if (tempSensor.GetTemperature() >= 20) notifier.NotifyAbnormalTemperature();
+
+        /*--------------------------------------------------------*/
+        FridgeDrawer myFridgeDrawer[][] = new FridgeDrawer[3][3];
+        Setting set = new Setting();
+        //加入我要設定0，0格的細節
+        set.SetFridgeDrawer(myFridgeDrawer);
+        //set.SetDrawerDetail(0, 0, goods, drawerMode, minWeight);
     }
 }
