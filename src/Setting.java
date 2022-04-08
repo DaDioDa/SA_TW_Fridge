@@ -8,9 +8,9 @@ public class Setting
     //那我要在冰箱格子的class中hold一個WeightSensor嗎
     //還是我在這個class裡面開一個WeightSensor陣列
     //因爲我有冰箱有幾個分隔就應該有幾個重量感測器吧
-
-
     
+
+
     //可能跟DB或者local取得格子資料
     
 
