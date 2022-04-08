@@ -14,7 +14,7 @@ public class Notifier
     }
 
     //提醒菜太少了
-    public void NotifyWeight()
+    public void NotifyWeight(FridgeDrawer fridgeDrawer)
     {
 
     }

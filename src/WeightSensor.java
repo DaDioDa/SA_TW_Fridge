@@ -1,31 +1,19 @@
 public class WeightSensor 
 {
-    private Notifier notifier;
     private float weight;
-    private float minWeight;
-
-    //設定通知器
-    public void SetNotifier(Notifier notifier)
-    {
-        this.notifier = notifier;
-    }
 
     //判斷重量過低後通知通知
-    public void CheckTemperature()
+    public void CheckWeight(Notifier notifier, FridgeDrawer fridgeDrawer)
     {
-        if (weight <= minWeight) notifier.NotifyWeight();
-    }
 
-    //設定最大溫度
-    public void SetMinWeight(float minWeight)
-    {
-        this.minWeight = minWeight;
-    }
+        if (weight <= fridgeDrawer.minWeight) notifier.NotifyWeight(fridgeDrawer);
+   
+    } 
 
-    //取得最大溫度
+    //取得當前重量
     public float GetMinWeight()
     {
-        return minWeight;
+        return weight;
     }
 
     //讓別的class取得現在的溫度
