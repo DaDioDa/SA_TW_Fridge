@@ -16,6 +16,10 @@ public class App {
         /*--------------------------------------------------------*/
         Notifier notifier = new Notifier();
         TempSensor tempSensor = new TempSensor();
+        //給溫度感應一個通知器
+        tempSensor.SetNotifier(notifier);
+        //應該要週期性的呼叫檢查溫度
+        tempSensor.CheckTemperature();
         //if (tempSensor.GetTemperature() >= 20) notifier.NotifyAbnormalTemperature();
     }
 }
