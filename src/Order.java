@@ -4,19 +4,19 @@ import java.util.ArrayList;
 public class Order 
 {
     //訂單編號
-    int OrderId;
+    private int OrderId;
     //訂單日期
-    Date OrderDate;
+    private Date OrderDate;
     //預計到貨日期
-    Date EstimatArrivalDate;
+    private Date EstimatArrivalDate;
     //到貨日期
-    Date ArrivalDate;
+    private Date ArrivalDate;
     //訂單內容(菜的陣列)
-    ArrayList<Goods> OrderContent;
+    private ArrayList<Goods> OrderContent;
     //訂單狀態
-    OrderStatus Status;
+    private OrderStatus Status;
     //總價
-    float TotalPrice;
+    private float TotalPrice;
 
     //建構
     public Order(int OrderId,ArrayList<Goods> OrderContent, Date OrderDate, Date EstimatArrivalDate)
@@ -57,7 +57,7 @@ public class Order
     }
 
     //設定到貨日
-    void SetArrivalDate()
+    public void SetArrivalDate()
     {
         ArrivalDate = new Date();
     }

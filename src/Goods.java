@@ -13,8 +13,6 @@ public class Goods
     //有效期限，day
     private int ExpirationDate;
 
-    public Goods(){}
-
     public Goods(int ProductID, String FarmName, String ProductName, float Price , int ExpirationDate, String ProductImage)
     {
         this.ProductID = ProductID;
