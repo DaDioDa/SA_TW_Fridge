@@ -1,3 +1,5 @@
+import java.util.Date;
+
 public class Setting 
 {
     //冰箱格子陣列
@@ -21,6 +23,12 @@ public class Setting
     
     //格子交換位子
     public void ChangeDrawerPosition(int i, int j, int m, int n)
+    {
+        
+    }
+
+    //設定到期日
+    public void SetExpireDate(int i, int j, Date ExpireDate)
     {
         
     }

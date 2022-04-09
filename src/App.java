@@ -28,5 +28,7 @@ public class App {
         //加入我要設定0，0格的細節
         set.SetFridgeDrawer(myFridgeDrawer);
         //set.SetDrawerDetail(0, 0, goods, drawerMode, minWeight);
+
+
     }
 }
